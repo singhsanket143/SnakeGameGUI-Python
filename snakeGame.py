@@ -67,6 +67,7 @@ def showScore(choice=1):
 
 
 # Main Logic Of The GAME
+#hactoberfest commit
 while True:
     for event in pygame.event.get(): # accepts the event
         if event.type == pygame.QUIT: # quit event
