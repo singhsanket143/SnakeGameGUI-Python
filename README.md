@@ -1,6 +1,7 @@
 # SNAKE GAME IN PYTHON USING PYGAME
-** This is a python based GUI game of Snake **
-** CONTROLS**
+**This is a python based GUI game of Snake**
+
+**CONTROLS**
 1) UP: up_arrow or w
 2) DOWN: down_arrow or s
 3) Right: right_arrow or d
