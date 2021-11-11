@@ -26,7 +26,7 @@ red = pygame.Color(255, 0 ,0) #red color-gameover
 pink = pygame.Color(255,105,180)
 black = pygame.Color(0, 0, 0) #black-score
 white = pygame.Color(255, 255, 255) #white-screen
-brown = pygame.Color(0, 0, 255) #brown-food
+blue = pygame.Color(0, 0, 255) #blue-food
 
 
 # fps controller
@@ -121,7 +121,7 @@ while True:
     playSurface.fill(white)
     for pos in snakeBody:
         pygame.draw.rect(playSurface, pink, pygame.Rect(pos[0],pos[1],10,10))
-    pygame.draw.rect(playSurface,brown,pygame.Rect(foodPos[0],foodPos[1],10,10))
+    pygame.draw.rect(playSurface,blue,pygame.Rect(foodPos[0],foodPos[1],10,10))
 
     # Boundary Condition
     if snakePos[0] > 710 or snakePos[0] < 0:
