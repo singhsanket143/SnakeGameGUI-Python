@@ -1,6 +1,7 @@
-# SNAKE GAME IN PYTHON USING PYGAME
+# 3720 GitHub Pracitce with forked Python SNAKE GAME
+** Scrum and Scrummer Team's repo - Madison, Kristophere, Matthew, Mike
 ** This is a python based GUI game of Snake **
-** CONTROLS**
+** GAME CONTROLS**
 1) UP: up_arrow or w
 2) DOWN: down_arrow or s
 3) Right: right_arrow or d
