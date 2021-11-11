@@ -20,7 +20,10 @@ pygame.display.set_caption('!!! SNAKE GAME !!!') # To set the Upper heading of t
 #Colors
 # The color method expects three parameters r,g,b combination to give the color
 red = pygame.Color(255, 0 ,0) #red color-gameover
-green = pygame.Color(0, 255, 0) #green-snake
+#old color
+    #green = pygame.Color(0, 255, 0) #green-snake
+#madison's issue of changing snake color
+pink = pygame.Color(255,105,180)
 black = pygame.Color(0, 0, 0) #black-score
 white = pygame.Color(255, 255, 255) #white-screen
 brown = pygame.Color(165, 42, 42) #brown-food
@@ -117,7 +120,7 @@ while True:
     foodSpawn = True
     playSurface.fill(white)
     for pos in snakeBody:
-        pygame.draw.rect(playSurface, green, pygame.Rect(pos[0],pos[1],10,10))
+        pygame.draw.rect(playSurface, pink, pygame.Rect(pos[0],pos[1],10,10))
     pygame.draw.rect(playSurface,brown,pygame.Rect(foodPos[0],foodPos[1],10,10))
 
     # Boundary Condition
