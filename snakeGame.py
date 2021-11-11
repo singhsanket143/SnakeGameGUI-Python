@@ -26,7 +26,7 @@ red = pygame.Color(255, 0 ,0) #red color-gameover
 pink = pygame.Color(255,105,180)
 black = pygame.Color(0, 0, 0) #black-score
 white = pygame.Color(255, 255, 255) #white-screen
-brown = pygame.Color(165, 42, 42) #brown-food
+brown = pygame.Color(0, 0, 255) #brown-food
 
 
 # fps controller
