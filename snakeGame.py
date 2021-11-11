@@ -58,7 +58,7 @@ def gameOver():
 
 def showScore(choice=1):
     sFont = pygame.font.SysFont('monaco', 42) #choose font name and size
-    Ssurf = sFont.render('SCORE : {0}'.format(score), True, black) # this is the surface where game over will display having 3 args : the message, antialiasing,and Color
+    Ssurf = sFont.render('SCORE : {0}'.format(score), True, white) # this is the surface where game over will display having 3 args : the message, antialiasing,and Color
     Srect = Ssurf.get_rect() #to get rect coordinates of the game over text surface
     if choice == 1:
         Srect.midtop = (80, 10)
@@ -118,7 +118,7 @@ while True:
     if foodSpawn == False:
         foodPos = [random.randrange(1,72)*10,random.randrange(1,46)*10]
     foodSpawn = True
-    playSurface.fill(white)
+    playSurface.fill(black)
     for pos in snakeBody:
         pygame.draw.rect(playSurface, pink, pygame.Rect(pos[0],pos[1],10,10))
     pygame.draw.rect(playSurface,blue,pygame.Rect(foodPos[0],foodPos[1],10,10))
