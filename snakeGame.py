@@ -46,7 +46,7 @@ initscore = 0
 # Game Over function
 def gameOver():
     myFont = pygame.font.SysFont('monaco', 72) #choose font name and size
-    GOsurf = myFont.render(' GAME OVER !!!', True, red) # this is the surface where game over will display having 3 args : the message, antialiasing,and Color
+    GOsurf = myFont.render(' YOU LOST -- GAME OVER !!!', True, red) # this is the surface where game over will display having 3 args : the message, antialiasing,and Color
     GOrect = GOsurf.get_rect() #to get rect coordinates of the game over text surface
     GOrect.midtop = (360, 15)
     playSurface.blit(GOsurf, GOrect) # bind the gameover text to the main surface
