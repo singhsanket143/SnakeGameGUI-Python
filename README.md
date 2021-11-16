@@ -3,6 +3,8 @@
 
 ** This is a python based GUI game of Snake **
 
+** Make sure to install Pygame to run the program
+
 ** GAME CONTROLS**
 1) UP: up_arrow or w
 2) DOWN: down_arrow or s
