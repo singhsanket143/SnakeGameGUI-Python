@@ -23,11 +23,15 @@ red = pygame.Color(255, 0 ,0) #red color-gameover
 #old color
     #green = pygame.Color(0, 255, 0) #green-snake
 #madison's issue of changing snake color
-pink = pygame.Color(255,105,180)
-black = pygame.Color(0, 0, 0) #black-score
-white = pygame.Color(255, 255, 255) #white-screen
-blue = pygame.Color(0, 0, 255) #blue-food
-
+#pink = pygame.Color(255,105,180)
+#black = pygame.Color(0, 0, 0) #black-score
+#white = pygame.Color(255, 255, 255) #white-screen
+#blue = pygame.Color(0, 0, 255) #blue-food
+#Kevin's issue of changing snake body color to look more like yellow python, changed background, score and food color as well.
+yellow = pygame.Color(255, 255, 0)
+green = pygame.Color(204, 255, 153) #green-background
+blue = pygame.Color(0, 102, 204) #blue-score
+brown = pygame.Color(102, 51, 0) #brown-food
 
 # fps controller
 fpsController = pygame.time.Clock()
