@@ -33,7 +33,7 @@ blue = pygame.Color(0, 0, 255) #blue-food
 fpsController = pygame.time.Clock()
 
 # important varibles for the gameover
-snakePos = [100, 50] #initial coordinate of the snake head
+snakePos = [400, 400] #initial coordinate of the snake head
 snakeBody = [[100, 50], [90, 50], [80, 50]] #snake snakeBody
 foodPos = [random.randrange(1,72)*10,random.randrange(1,46)*10] #random food positioning
 foodSpawn = True
