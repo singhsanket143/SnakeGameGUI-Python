@@ -19,7 +19,7 @@ pygame.display.set_caption('!!! SNAKE GAME !!!') # To set the Upper heading of t
 
 #Colors
 # The color method expects three parameters r,g,b combination to give the color
-red = pygame.Color(255, 0 ,0) #red color-gameover
+
 #old color
     #green = pygame.Color(0, 255, 0) #green-snake
 #madison's issue of changing snake color
@@ -28,6 +28,7 @@ red = pygame.Color(255, 0 ,0) #red color-gameover
 #white = pygame.Color(255, 255, 255) #white-screen
 #blue = pygame.Color(0, 0, 255) #blue-food
 #Kevin's issue of changing snake body color to look more like yellow python, changed background, score and food color as well.
+red = pygame.Color(255, 0 ,0) #red color-gameover
 yellow = pygame.Color(255, 255, 0)
 green = pygame.Color(204, 255, 153) #green-background
 blue = pygame.Color(0, 102, 204) #blue-score
