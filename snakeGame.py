@@ -19,12 +19,20 @@ pygame.display.set_caption('!!! SNAKE GAME !!!') # To set the Upper heading of t
 
 #Colors
 # The color method expects three parameters r,g,b combination to give the color
-red = pygame.Color(255, 0 ,0) #red color-gameover
-green = pygame.Color(0, 255, 0) #green-snake
-black = pygame.Color(0, 0, 0) #black-score
-white = pygame.Color(255, 255, 255) #white-screen
-brown = pygame.Color(165, 42, 42) #brown-food
 
+#old color
+    #green = pygame.Color(0, 255, 0) #green-snake
+#madison's issue of changing snake color
+#pink = pygame.Color(255,105,180)
+#black = pygame.Color(0, 0, 0) #black-score
+#white = pygame.Color(255, 255, 255) #white-screen
+#blue = pygame.Color(0, 0, 255) #blue-food
+#Kevin's issue of changing snake body color to look more like yellow python, changed background, score and food color as well.
+red = pygame.Color(255, 0 ,0) #red color-gameover
+yellow = pygame.Color(255, 255, 0)
+green = pygame.Color(204, 255, 153) #green-background
+blue = pygame.Color(0, 102, 204) #blue-score
+brown = pygame.Color(102, 51, 0) #brown-food
 
 # fps controller
 fpsController = pygame.time.Clock()
@@ -43,7 +51,7 @@ initscore = 0
 # Game Over function
 def gameOver():
     myFont = pygame.font.SysFont('monaco', 72) #choose font name and size
-    GOsurf = myFont.render(' GAME OVER !!!', True, red) # this is the surface where game over will display having 3 args : the message, antialiasing,and Color
+    GOsurf = myFont.render('GAME OVER !!!', True, red) # this is the surface where game over will display having 3 args : the message, antialiasing,and Color
     GOrect = GOsurf.get_rect() #to get rect coordinates of the game over text surface
     GOrect.midtop = (360, 15)
     playSurface.blit(GOsurf, GOrect) # bind the gameover text to the main surface
@@ -55,7 +63,7 @@ def gameOver():
 
 def showScore(choice=1):
     sFont = pygame.font.SysFont('monaco', 42) #choose font name and size
-    Ssurf = sFont.render('SCORE : {0}'.format(score), True, black) # this is the surface where game over will display having 3 args : the message, antialiasing,and Color
+    Ssurf = sFont.render('SCORE : {0}'.format(score), True, blue) # this is the surface where game over will display having 3 args : the message, antialiasing,and Color
     Srect = Ssurf.get_rect() #to get rect coordinates of the game over text surface
     if choice == 1:
         Srect.midtop = (80, 10)
@@ -115,9 +123,9 @@ while True:
     if foodSpawn == False:
         foodPos = [random.randrange(1,72)*10,random.randrange(1,46)*10]
     foodSpawn = True
-    playSurface.fill(white)
+    playSurface.fill(black)
     for pos in snakeBody:
-        pygame.draw.rect(playSurface, green, pygame.Rect(pos[0],pos[1],10,10))
+        pygame.draw.rect(playSurface, yellow, pygame.Rect(pos[0],pos[1],10,10))
     pygame.draw.rect(playSurface,brown,pygame.Rect(foodPos[0],foodPos[1],10,10))
 
     # Boundary Condition
